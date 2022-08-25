@@ -28,11 +28,12 @@
     "dmxnet": "^0.8.0",
     "sacn": "^4.2.0",
     "serialport": "^10.4.0",
-    "socket.io": "^4.5.1"
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "@types/jest": "^28.1.8",
     "@types/node": "^16.11.56",
+    "@types/socket.io": "^2.1.13",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "eslint": "^8.22.0",

@@ -1,7 +1,7 @@
 /// <reference types="node" />
 /// <reference types="node" />
 import { IUniverseDriver, UniverseData } from '../models/IUniverseDriver';
-import { Server } from 'socket.io';
+import * as io from 'socket.io';
 import { EventEmitter } from 'events';
 export interface SocketIOArgs {
     port?: number;
@@ -9,7 +9,7 @@ export interface SocketIOArgs {
 }
 export declare class SocketIODriver extends EventEmitter implements IUniverseDriver {
     universe: Buffer;
-    server: Server;
+    server: io.Server;
     constructor(options: SocketIOArgs);
     init(): Promise<void>;
     close(): void;
